@@ -6,6 +6,7 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 import matplotlib.pyplot as plt
 
 # Пример загрузки данных из CSV файла
+# тестовый коммит
 data = pd.read_csv('C:/Users/artem/YandexDisk/ккд/flights_v_202406012145.csv')
 
 # Преобразуем в даты
@@ -32,6 +33,8 @@ categorical_features = ['departure_airport','arrival_airport','aircraft_code']
 # Создание трансформеров для числовых и категориальных данных
 numeric_transformer = StandardScaler()
 categorical_transformer = OneHotEncoder()
+
+
 
 # Применение преобразований к числовым данным
 data_numeric = data[numeric_features]
